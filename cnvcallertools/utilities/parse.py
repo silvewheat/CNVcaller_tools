@@ -53,7 +53,7 @@ def loadtwocol_dlist(infile):
         for line in f:
             line = line.strip()
             if line:
-                k, v = line.strip('\t')
+                k, v = line.split('\t')
                 kvdict[v].append(k)
     return kvdict
 
