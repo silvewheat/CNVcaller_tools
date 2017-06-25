@@ -11,14 +11,14 @@ from cnvcallertools.utilities.groupdescribe import *
 
 
 @click.group()
-def cli():
+def main():
     """
     tools for CNVcaller
     """
 
 
 
-@cli.command('groupdescribe', short_help='describe info by each group')
+@main.command('groupdescribe', short_help='describe info by each group')
 @click.option('--cnvfile', help='cnvfile generated from CNVcaller')
 @click.option('--groupfile', help='groupfile to decribe sample group, the first col is sample id, the second col is group id')
 @click.option('--oufile', help='output file name')
@@ -29,3 +29,5 @@ def groupdescribe(cnvfile, groupfile, outfile, chromorder):
     newdf = groupdescribe(cnvdf, gdict)
     newdf.to_csv(outfile, sep='\t', index=False)
 
+if __name__ == '__main__':
+    main()
