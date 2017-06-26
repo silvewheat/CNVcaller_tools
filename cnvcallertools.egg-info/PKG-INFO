@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: cnvcallertools
+Version: 0.1.0
+Summary: command line tool kits from analysis CNVcaller result
+Home-page: https://github.com/silvewheat/CNVcaller_tools
+Author: YudongCai
+Author-email: yudongcai216@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: python cnvcaller commandline
+Platform: UNKNOWN

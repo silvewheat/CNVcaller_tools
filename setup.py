@@ -18,6 +18,7 @@ setup(name='cnvcallertools',
       author='YudongCai',
       author_email='yudongcai216@gmail.com',
       license='MIT',
+      url='https://github.com/silvewheat/CNVcaller_tools',
       packages=find_packages(),
       include_package_data=True,
       zip_safe=True,
@@ -29,7 +30,7 @@ setup(name='cnvcallertools',
               ],
       entry_points={
               'console_scripts': [
-                      'cnvtk = cnvcallertools.main:main'
+                      'cnvts = cnvcallertools.main:main'
                       ]
               }
       )
